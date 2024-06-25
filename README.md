@@ -85,19 +85,3 @@ curl -X GET "http://127.0.0.1:8000/metrics"
 ├── docker-compose.yml
 ├── requirements.txt
 └── README.md
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Docker Compose File
-```yaml
-version: '3.8'
-
-services:
-    web:
-        build:
-            context: .
-            dockerfile: Dockerfile
-        ports:
-            - "8000:8000"
-```
